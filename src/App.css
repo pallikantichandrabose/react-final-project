@@ -1,0 +1,90 @@
+/* Root styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navigation styles */
+.nav-container {
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  background-color: #01182d; /* Dark background for navbar */
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative; /* For hover effects */
+  transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+/* Link styles */
+.nav-link {
+  text-decoration: none;
+  color: #ffffff; /* White text color */
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px; /* Rounded corners for links */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the links */
+.nav-link:hover {
+  color: #007bff; /* Bootstrap primary blue color */
+  background-color: rgb(255, 255, 255); /* Subtle hover effect */
+}
+
+/* Style for active or selected link */
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff; /* Matches hover color */
+  background-color: rgba(255, 255, 255, 0.2); /* Active link background */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column; /* Stack links vertically */
+    align-items: stretch; /* Stretch items to fill width */
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+    text-align: center; /* Center text in mobile view */
+    font-size: 16px;
+  }
+}
+
+/* Additional styling for general layout */
+.card {
+  padding: 2em;
+  border-radius: 10px; /* Rounded corners for cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease; /* Smooth transform */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* General link styles */
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Additional hover effect for links */
+a:hover {
+  color: #007bff; /* Bootstrap primary blue color */
+}
+
+/* Responsive padding for #root */
+@media (max-width: 480px) {
+  #root {
+    padding: 1rem; /* Reduced padding for small screens */
+  }
+}
